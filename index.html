@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Tailwind CSS Carousel</title>
+		<link href="https://api.fontshare.com/v2/css?f[]=general-sans@1,2&display=swap" rel="stylesheet" />
+
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<head>
+			<script>
+				tailwind.config = {
+					theme: {
+						extend: {
+							fontFamily: {
+								generalSans: "'General Sans', san-serif",
+							},
+							keyframes: {
+								parallax: {
+									"0%": {
+										objectPosition: "center",
+									},
+									"100%": {
+										objectPosition: "0 0",
+									},
+								},
+							},
+							animation: {
+								parallax: "parallax linear both",
+							},
+						},
+					},
+				};
+			</script>
+		</head>
+
+		<div class="min-h-screen bg-zinc-950 text-zinc-50 font-generalSans">
+			<div class="py-8">
+				<h1 class="text-center text-2xl md:text-4xl font-medium">Tailwind CSS Parallax Carousel</h1>
+			</div>
+			<div
+				class="slides overflow-scroll smooth-scroll w-full whitespace-nowrap touch-pan-x before:shrink-0 after:shrink-0 before:w-[36vw] after:w-[36vw] snap-mandatory flex snap-x"
+			>
+				<div
+					class="slide flex-shrink-0 w-[70vw] h-[calc(70vw*1.5)] sm:w-[40vw] sm:h-[calc(40vw*1.5)] md:w-[25vw] md:h-[calc(25vw*1.5)] overflow-clip relative mx-2 snap-center rounded-3xl"
+				>
+					<img
+						src="https://images.pexels.com/photos/687501/pexels-photo-687501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+						alt="Image 1"
+						class="block w-full h-full object-cover object-center absolute right-0 animate-parallax [animation-timeline:view(x)]"
+					/>
+				</div>
+
+				<div
+					class="slide flex-shrink-0 w-[70vw] h-[calc(70vw*1.5)] sm:w-[40vw] sm:h-[calc(40vw*1.5)] md:w-[25vw] md:h-[calc(25vw*1.5)] overflow-clip relative mx-2 snap-center rounded-3xl"
+				>
+					<img
+						src="https://images.pexels.com/photos/1459347/pexels-photo-1459347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+						alt="Image 2"
+						class="block w-full h-full object-cover object-center absolute right-0 animate-parallax [animation-timeline:view(x)]"
+					/>
+				</div>
+
+				<div
+					class="slide flex-shrink-0 w-[70vw] h-[calc(70vw*1.5)] sm:w-[40vw] sm:h-[calc(40vw*1.5)] md:w-[25vw] md:h-[calc(25vw*1.5)] overflow-clip relative mx-2 snap-center rounded-3xl"
+				>
+					<img
+						src="https://images.pexels.com/photos/1022166/pexels-photo-1022166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+						alt="Image 3"
+						class="block w-full h-full object-cover object-center absolute right-0 animate-parallax [animation-timeline:view(x)]"
+					/>
+				</div>
+
+				<div
+					class="slide flex-shrink-0 w-[70vw] h-[calc(70vw*1.5)] sm:w-[40vw] sm:h-[calc(40vw*1.5)] md:w-[25vw] md:h-[calc(25vw*1.5)] overflow-clip relative mx-2 snap-center rounded-3xl"
+				>
+					<img
+						src="https://images.pexels.com/photos/3162822/pexels-photo-3162822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+						alt="Image 4"
+						class="block w-full h-full object-cover object-center absolute right-0 animate-parallax [animation-timeline:view(x)]"
+					/>
+				</div>
+
+				<div
+					class="slide flex-shrink-0 w-[70vw] h-[calc(70vw*1.5)] sm:w-[40vw] sm:h-[calc(40vw*1.5)] md:w-[25vw] md:h-[calc(25vw*1.5)] overflow-clip relative mx-2 snap-center rounded-3xl"
+				>
+					<img
+						src="https://images.pexels.com/photos/2016703/pexels-photo-2016703.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+						alt="Image 5"
+						class="block w-full h-full object-cover object-center absolute right-0 animate-parallax [animation-timeline:view(x)]"
+					/>
+				</div>
+
+				<div
+					class="slide flex-shrink-0 w-[70vw] h-[calc(70vw*1.5)] sm:w-[40vw] sm:h-[calc(40vw*1.5)] md:w-[25vw] md:h-[calc(25vw*1.5)] overflow-clip relative mx-2 snap-center rounded-3xl"
+				>
+					<img
+						src="https://images.pexels.com/photos/5818810/pexels-photo-5818810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+						alt="Image 6"
+						class="block w-full h-full object-cover object-center absolute right-0 animate-parallax [animation-timeline:view(x)]"
+					/>
+				</div>
+
+				<div
+					class="slide flex-shrink-0 w-[70vw] h-[calc(70vw*1.5)] sm:w-[40vw] sm:h-[calc(40vw*1.5)] md:w-[25vw] md:h-[calc(25vw*1.5)] overflow-clip relative mx-2 snap-center rounded-3xl"
+				>
+					<img
+						src="https://images.pexels.com/photos/5896359/pexels-photo-5896359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+						alt="Image 7"
+						class="block w-full h-full object-cover object-center absolute right-0 animate-parallax [animation-timeline:view(x)]"
+					/>
+				</div>
+
+				<div
+					class="slide flex-shrink-0 w-[70vw] h-[calc(70vw*1.5)] sm:w-[40vw] sm:h-[calc(40vw*1.5)] md:w-[25vw] md:h-[calc(25vw*1.5)] overflow-clip relative mx-2 snap-center rounded-3xl"
+				>
+					<img
+						src="https://images.pexels.com/photos/5430078/pexels-photo-5430078.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+						alt="Image 8"
+						class="block w-full h-full object-cover object-center absolute right-0 animate-parallax [animation-timeline:view(x)]"
+					/>
+				</div>
+
+				<div
+					class="slide flex-shrink-0 w-[70vw] h-[calc(70vw*1.5)] sm:w-[40vw] sm:h-[calc(40vw*1.5)] md:w-[25vw] md:h-[calc(25vw*1.5)] overflow-clip relative mx-2 snap-center rounded-3xl"
+				>
+					<img
+						src="https://images.pexels.com/photos/1431114/pexels-photo-1431114.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+						alt="Image 9"
+						class="block w-full h-full object-cover object-center absolute right-0 animate-parallax [animation-timeline:view(x)]"
+					/>
+				</div>
+
+				<div
+					class="slide flex-shrink-0 w-[70vw] h-[calc(70vw*1.5)] sm:w-[40vw] sm:h-[calc(40vw*1.5)] md:w-[25vw] md:h-[calc(25vw*1.5)] overflow-clip relative mx-2 snap-center rounded-3xl"
+				>
+					<img
+						src="https://images.pexels.com/photos/1722179/pexels-photo-1722179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+						alt="Image 10"
+						class="block w-full h-full object-cover object-center absolute right-0 animate-parallax [animation-timeline:view(x)]"
+					/>
+				</div>
+			</div>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
